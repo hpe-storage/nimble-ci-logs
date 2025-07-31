@@ -1,65 +1,65 @@
-Jul 28 07:20:25 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
-Jul 28 07:20:25 ubuntu etcd[80353]: WARNING: Package "github.com/golang/protobuf/protoc-gen-go/generator" is deprecated.
-Jul 28 07:20:25 ubuntu etcd[80353]:         A future release of golang/protobuf will delete this package,
-Jul 28 07:20:25 ubuntu etcd[80353]:         which has long been excluded from the compatibility promise.
-Jul 28 07:20:25 ubuntu etcd[80353]: [WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
-Jul 28 07:20:25 ubuntu etcd[80353]: Running http and grpc server on single port. This is not recommended for production.
-Jul 28 07:20:25 ubuntu etcd[80353]: etcd Version: 3.4.27
-Jul 28 07:20:25 ubuntu etcd[80353]: [WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
-Jul 28 07:20:25 ubuntu etcd[80353]: Git SHA: c92fb80f3
-Jul 28 07:20:25 ubuntu etcd[80353]: Go Version: go1.19.10
-Jul 28 07:20:25 ubuntu etcd[80353]: Go OS/Arch: linux/amd64
-Jul 28 07:20:25 ubuntu etcd[80353]: setting maximum number of CPUs to 4, total number of available CPUs is 4
-Jul 28 07:20:25 ubuntu etcd[80353]: Running http and grpc server on single port. This is not recommended for production.
-Jul 28 07:20:25 ubuntu etcd[80353]: name = ubuntu
-Jul 28 07:20:25 ubuntu etcd[80353]: data dir = /opt/stack/data/etcd
-Jul 28 07:20:25 ubuntu etcd[80353]: member dir = /opt/stack/data/etcd/member
-Jul 28 07:20:25 ubuntu etcd[80353]: heartbeat = 100ms
-Jul 28 07:20:25 ubuntu etcd[80353]: election = 1000ms
-Jul 28 07:20:25 ubuntu etcd[80353]: snapshot count = 100000
-Jul 28 07:20:25 ubuntu etcd[80353]: advertise client URLs = http://10.201.5.82:2379
-Jul 28 07:20:25 ubuntu etcd[80353]: check file permission: directory "/opt/stack/data/etcd" exist, but the permission is "dtrwxrwxrwx". The recommended permission is "-rwx------" to prevent possible unprivileged access to the data.
-Jul 28 07:20:25 ubuntu etcd[80353]: starting member 43038365673ccf7b in cluster 4e30dcbc85f3b47b
-Jul 28 07:20:25 ubuntu etcd[80353]: raft2025/07/28 07:20:25 INFO: 43038365673ccf7b switched to configuration voters=()
-Jul 28 07:20:25 ubuntu etcd[80353]: raft2025/07/28 07:20:25 INFO: 43038365673ccf7b became follower at term 0
-Jul 28 07:20:25 ubuntu etcd[80353]: raft2025/07/28 07:20:25 INFO: newRaft 43038365673ccf7b [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
-Jul 28 07:20:25 ubuntu etcd[80353]: raft2025/07/28 07:20:25 INFO: 43038365673ccf7b became follower at term 1
-Jul 28 07:20:25 ubuntu etcd[80353]: raft2025/07/28 07:20:25 INFO: 43038365673ccf7b switched to configuration voters=(4828847697018277755)
-Jul 28 07:20:25 ubuntu etcd[80353]: simple token is not cryptographically signed
-Jul 28 07:20:25 ubuntu etcd[80353]: starting server... [version: 3.4.27, cluster version: to_be_decided]
-Jul 28 07:20:25 ubuntu etcd[80353]: 43038365673ccf7b as single-node; fast-forwarding 9 ticks (election ticks 10)
-Jul 28 07:20:25 ubuntu etcd[80353]: started to purge file, dir: /opt/stack/data/etcd/member/snap, suffix: snap.db, max: 5, interval: 30s
-Jul 28 07:20:25 ubuntu etcd[80353]: started to purge file, dir: /opt/stack/data/etcd/member/snap, suffix: snap, max: 5, interval: 30s
-Jul 28 07:20:25 ubuntu etcd[80353]: raft2025/07/28 07:20:25 INFO: 43038365673ccf7b switched to configuration voters=(4828847697018277755)
-Jul 28 07:20:25 ubuntu etcd[80353]: started to purge file, dir: /opt/stack/data/etcd/member/wal, suffix: wal, max: 5, interval: 30s
-Jul 28 07:20:25 ubuntu etcd[80353]: added member 43038365673ccf7b [http://10.201.5.82:2380] to cluster 4e30dcbc85f3b47b
-Jul 28 07:20:25 ubuntu etcd[80353]: listening for peers on [::]:2380
-Jul 28 07:20:26 ubuntu etcd[80353]: raft2025/07/28 07:20:26 INFO: 43038365673ccf7b is starting a new election at term 1
-Jul 28 07:20:26 ubuntu etcd[80353]: raft2025/07/28 07:20:26 INFO: 43038365673ccf7b became candidate at term 2
-Jul 28 07:20:26 ubuntu etcd[80353]: raft2025/07/28 07:20:26 INFO: 43038365673ccf7b received MsgVoteResp from 43038365673ccf7b at term 2
-Jul 28 07:20:26 ubuntu etcd[80353]: raft2025/07/28 07:20:26 INFO: 43038365673ccf7b became leader at term 2
-Jul 28 07:20:26 ubuntu etcd[80353]: raft2025/07/28 07:20:26 INFO: raft.node: 43038365673ccf7b elected leader 43038365673ccf7b at term 2
-Jul 28 07:20:26 ubuntu etcd[80353]: published {Name:ubuntu ClientURLs:[http://10.201.5.82:2379]} to cluster 4e30dcbc85f3b47b
-Jul 28 07:20:26 ubuntu etcd[80353]: setting up the initial cluster version to 3.4
-Jul 28 07:20:26 ubuntu etcd[80353]: set the initial cluster version to 3.4
-Jul 28 07:20:26 ubuntu etcd[80353]: enabled capabilities for version 3.4
-Jul 28 07:20:26 ubuntu etcd[80353]: ready to serve client requests
-Jul 28 07:20:26 ubuntu etcd[80353]: serving insecure client requests on 10.201.5.82:2379, this is strongly discouraged!
-Jul 28 07:20:26 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
-Jul 28 07:25:07 ubuntu etcd[80353]: start time = 2025-07-28 07:25:07.041387727 +0000 UTC m=+281.167920517, time spent = 577.635µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:25:07 ubuntu etcd[80353]: start time = 2025-07-28 07:25:07.06881514 +0000 UTC m=+281.195347962, time spent = 234.511µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:25:14 ubuntu etcd[80353]: start time = 2025-07-28 07:25:14.261447355 +0000 UTC m=+288.387980162, time spent = 201.585µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:25:16 ubuntu etcd[80353]: start time = 2025-07-28 07:25:16.434052482 +0000 UTC m=+290.560585281, time spent = 540.936µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:28:47 ubuntu etcd[80353]: start time = 2025-07-28 07:28:47.893036981 +0000 UTC m=+502.019569798, time spent = 399.863µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:28:47 ubuntu etcd[80353]: start time = 2025-07-28 07:28:47.918694046 +0000 UTC m=+502.045226850, time spent = 170.928µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:28:50 ubuntu etcd[80353]: start time = 2025-07-28 07:28:50.324069433 +0000 UTC m=+504.450602337, time spent = 448.885µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:28:52 ubuntu etcd[80353]: start time = 2025-07-28 07:28:52.429741476 +0000 UTC m=+506.556274278, time spent = 198.646µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:35:36 ubuntu etcd[80353]: start time = 2025-07-28 07:35:36.283996293 +0000 UTC m=+910.410529126, time spent = 946.451µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:35:36 ubuntu etcd[80353]: start time = 2025-07-28 07:35:36.294237811 +0000 UTC m=+910.420770602, time spent = 1.641501ms, remote = 10.201.5.82:46876, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 86, response count = 0, response size = 36, request content = compare:<target:CREATE key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" create_revision:0 > success:<request_put:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" value_size:16 lease:5727338820084841753 >> failure:<request_range:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" > >
-Jul 28 07:35:39 ubuntu etcd[80353]: start time = 2025-07-28 07:35:39.374196992 +0000 UTC m=+913.500729825, time spent = 450.734µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 58, response count = 0, response size = 38, request content = compare:<target:VALUE key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" value_size:16 > success:<request_delete_range:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" > > failure:<>
-Jul 28 07:35:39 ubuntu etcd[80353]: start time = 2025-07-28 07:35:39.594737583 +0000 UTC m=+913.721270387, time spent = 291.365µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:35:39 ubuntu etcd[80353]: start time = 2025-07-28 07:35:39.597069673 +0000 UTC m=+913.723602478, time spent = 208.487µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 86, response count = 0, response size = 36, request content = compare:<target:CREATE key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" create_revision:0 > success:<request_put:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" value_size:16 lease:5727338820084841757 >> failure:<request_range:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" > >
-Jul 28 07:35:41 ubuntu etcd[80353]: start time = 2025-07-28 07:35:41.479533257 +0000 UTC m=+915.606066063, time spent = 632.597µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 58, response count = 0, response size = 38, request content = compare:<target:VALUE key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" value_size:16 > success:<request_delete_range:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" > > failure:<>
-Jul 28 07:35:41 ubuntu etcd[80353]: start time = 2025-07-28 07:35:41.724408464 +0000 UTC m=+915.850941371, time spent = 587.659µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 28 07:35:41 ubuntu etcd[80353]: start time = 2025-07-28 07:35:41.727169602 +0000 UTC m=+915.853702404, time spent = 287.01µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 86, response count = 0, response size = 36, request content = compare:<target:CREATE key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" create_revision:0 > success:<request_put:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" value_size:16 lease:5727338820084841761 >> failure:<request_range:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" > >
-Jul 28 07:35:43 ubuntu etcd[80353]: start time = 2025-07-28 07:35:43.712842728 +0000 UTC m=+917.839375533, time spent = 312.071µs, remote = 10.201.5.82:46876, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 58, response count = 0, response size = 38, request content = compare:<target:VALUE key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" value_size:16 > success:<request_delete_range:<key:"/tooz/lockscinder-2bcb934d-4c05-46f4-860f-366dab101ba4" > > failure:<>
+Jul 31 12:29:34 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
+Jul 31 12:29:34 ubuntu etcd[79455]: WARNING: Package "github.com/golang/protobuf/protoc-gen-go/generator" is deprecated.
+Jul 31 12:29:34 ubuntu etcd[79455]:         A future release of golang/protobuf will delete this package,
+Jul 31 12:29:34 ubuntu etcd[79455]:         which has long been excluded from the compatibility promise.
+Jul 31 12:29:34 ubuntu etcd[79455]: [WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
+Jul 31 12:29:34 ubuntu etcd[79455]: Running http and grpc server on single port. This is not recommended for production.
+Jul 31 12:29:34 ubuntu etcd[79455]: etcd Version: 3.4.27
+Jul 31 12:29:34 ubuntu etcd[79455]: [WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
+Jul 31 12:29:34 ubuntu etcd[79455]: Git SHA: c92fb80f3
+Jul 31 12:29:34 ubuntu etcd[79455]: Go Version: go1.19.10
+Jul 31 12:29:34 ubuntu etcd[79455]: Go OS/Arch: linux/amd64
+Jul 31 12:29:34 ubuntu etcd[79455]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Jul 31 12:29:34 ubuntu etcd[79455]: Running http and grpc server on single port. This is not recommended for production.
+Jul 31 12:29:34 ubuntu etcd[79455]: name = ubuntu
+Jul 31 12:29:34 ubuntu etcd[79455]: data dir = /opt/stack/data/etcd
+Jul 31 12:29:34 ubuntu etcd[79455]: member dir = /opt/stack/data/etcd/member
+Jul 31 12:29:34 ubuntu etcd[79455]: heartbeat = 100ms
+Jul 31 12:29:34 ubuntu etcd[79455]: election = 1000ms
+Jul 31 12:29:34 ubuntu etcd[79455]: snapshot count = 100000
+Jul 31 12:29:34 ubuntu etcd[79455]: advertise client URLs = http://10.201.5.82:2379
+Jul 31 12:29:34 ubuntu etcd[79455]: check file permission: directory "/opt/stack/data/etcd" exist, but the permission is "dtrwxrwxrwx". The recommended permission is "-rwx------" to prevent possible unprivileged access to the data.
+Jul 31 12:29:34 ubuntu etcd[79455]: starting member 43038365673ccf7b in cluster 4e30dcbc85f3b47b
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b switched to configuration voters=()
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b became follower at term 0
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: newRaft 43038365673ccf7b [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b became follower at term 1
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b switched to configuration voters=(4828847697018277755)
+Jul 31 12:29:34 ubuntu etcd[79455]: simple token is not cryptographically signed
+Jul 31 12:29:34 ubuntu etcd[79455]: starting server... [version: 3.4.27, cluster version: to_be_decided]
+Jul 31 12:29:34 ubuntu etcd[79455]: started to purge file, dir: /opt/stack/data/etcd/member/snap, suffix: snap.db, max: 5, interval: 30s
+Jul 31 12:29:34 ubuntu etcd[79455]: started to purge file, dir: /opt/stack/data/etcd/member/snap, suffix: snap, max: 5, interval: 30s
+Jul 31 12:29:34 ubuntu etcd[79455]: started to purge file, dir: /opt/stack/data/etcd/member/wal, suffix: wal, max: 5, interval: 30s
+Jul 31 12:29:34 ubuntu etcd[79455]: 43038365673ccf7b as single-node; fast-forwarding 9 ticks (election ticks 10)
+Jul 31 12:29:34 ubuntu etcd[79455]: listening for peers on [::]:2380
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b switched to configuration voters=(4828847697018277755)
+Jul 31 12:29:34 ubuntu etcd[79455]: added member 43038365673ccf7b [http://10.201.5.82:2380] to cluster 4e30dcbc85f3b47b
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b is starting a new election at term 1
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b became candidate at term 2
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b received MsgVoteResp from 43038365673ccf7b at term 2
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: 43038365673ccf7b became leader at term 2
+Jul 31 12:29:34 ubuntu etcd[79455]: raft2025/07/31 12:29:34 INFO: raft.node: 43038365673ccf7b elected leader 43038365673ccf7b at term 2
+Jul 31 12:29:34 ubuntu etcd[79455]: published {Name:ubuntu ClientURLs:[http://10.201.5.82:2379]} to cluster 4e30dcbc85f3b47b
+Jul 31 12:29:34 ubuntu etcd[79455]: ready to serve client requests
+Jul 31 12:29:34 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
+Jul 31 12:29:34 ubuntu etcd[79455]: setting up the initial cluster version to 3.4
+Jul 31 12:29:34 ubuntu etcd[79455]: set the initial cluster version to 3.4
+Jul 31 12:29:34 ubuntu etcd[79455]: enabled capabilities for version 3.4
+Jul 31 12:29:34 ubuntu etcd[79455]: serving insecure client requests on 10.201.5.82:2379, this is strongly discouraged!
+Jul 31 12:34:16 ubuntu etcd[79455]: start time = 2025-07-31 12:34:16.168366272 +0000 UTC m=+281.516093960, time spent = 1.561819ms, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:34:16 ubuntu etcd[79455]: start time = 2025-07-31 12:34:16.228430834 +0000 UTC m=+281.576158539, time spent = 317.129µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:34:23 ubuntu etcd[79455]: start time = 2025-07-31 12:34:23.289369037 +0000 UTC m=+288.637096723, time spent = 357.949µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:34:25 ubuntu etcd[79455]: start time = 2025-07-31 12:34:25.635382003 +0000 UTC m=+290.983109706, time spent = 307.384µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:37:51 ubuntu etcd[79455]: start time = 2025-07-31 12:37:51.28194873 +0000 UTC m=+496.629676426, time spent = 376.076µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:37:51 ubuntu etcd[79455]: start time = 2025-07-31 12:37:51.288530646 +0000 UTC m=+496.636258348, time spent = 124.408µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:37:54 ubuntu etcd[79455]: start time = 2025-07-31 12:37:54.452452385 +0000 UTC m=+499.800180169, time spent = 453.045µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:37:55 ubuntu etcd[79455]: start time = 2025-07-31 12:37:55.665427794 +0000 UTC m=+501.013155599, time spent = 671.14µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:44:39 ubuntu etcd[79455]: start time = 2025-07-31 12:44:39.298839066 +0000 UTC m=+904.646566763, time spent = 2.308617ms, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:44:39 ubuntu etcd[79455]: start time = 2025-07-31 12:44:39.310691396 +0000 UTC m=+904.658419097, time spent = 1.178789ms, remote = 10.201.5.82:53998, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 86, response count = 0, response size = 36, request content = compare:<target:CREATE key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" create_revision:0 > success:<request_put:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" value_size:16 lease:5727338891188529177 >> failure:<request_range:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" > >
+Jul 31 12:44:42 ubuntu etcd[79455]: start time = 2025-07-31 12:44:42.395513141 +0000 UTC m=+907.743240959, time spent = 642.959µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 58, response count = 0, response size = 38, request content = compare:<target:VALUE key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" value_size:16 > success:<request_delete_range:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" > > failure:<>
+Jul 31 12:44:42 ubuntu etcd[79455]: start time = 2025-07-31 12:44:42.623498892 +0000 UTC m=+907.971226597, time spent = 273.713µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:44:42 ubuntu etcd[79455]: start time = 2025-07-31 12:44:42.625977869 +0000 UTC m=+907.973705573, time spent = 241.799µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 86, response count = 0, response size = 36, request content = compare:<target:CREATE key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" create_revision:0 > success:<request_put:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" value_size:16 lease:5727338891188529181 >> failure:<request_range:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" > >
+Jul 31 12:44:44 ubuntu etcd[79455]: start time = 2025-07-31 12:44:44.484999178 +0000 UTC m=+909.832726906, time spent = 890.911µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 58, response count = 0, response size = 38, request content = compare:<target:VALUE key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" value_size:16 > success:<request_delete_range:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" > > failure:<>
+Jul 31 12:44:44 ubuntu etcd[79455]: start time = 2025-07-31 12:44:44.731306676 +0000 UTC m=+910.079034380, time spent = 325.303µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Jul 31 12:44:44 ubuntu etcd[79455]: start time = 2025-07-31 12:44:44.733561108 +0000 UTC m=+910.081288812, time spent = 230.672µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 86, response count = 0, response size = 36, request content = compare:<target:CREATE key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" create_revision:0 > success:<request_put:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" value_size:16 lease:5727338891188529185 >> failure:<request_range:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" > >
+Jul 31 12:44:46 ubuntu etcd[79455]: start time = 2025-07-31 12:44:46.644671726 +0000 UTC m=+911.992399412, time spent = 333.725µs, remote = 10.201.5.82:53998, response type = /etcdserverpb.KV/Txn, request count = 1, request size = 58, response count = 0, response size = 38, request content = compare:<target:VALUE key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" value_size:16 > success:<request_delete_range:<key:"/tooz/lockscinder-591f9c61-1d3e-4c4e-a961-9c36460d1213" > > failure:<>
