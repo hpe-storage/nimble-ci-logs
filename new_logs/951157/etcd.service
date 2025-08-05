@@ -1,52 +1,52 @@
-Jul 19 01:02:34 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
-Jul 19 01:02:34 ubuntu etcd[79420]: WARNING: Package "github.com/golang/protobuf/protoc-gen-go/generator" is deprecated.
-Jul 19 01:02:34 ubuntu etcd[79420]:         A future release of golang/protobuf will delete this package,
-Jul 19 01:02:34 ubuntu etcd[79420]:         which has long been excluded from the compatibility promise.
-Jul 19 01:02:34 ubuntu etcd[79420]: [WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
-Jul 19 01:02:34 ubuntu etcd[79420]: Running http and grpc server on single port. This is not recommended for production.
-Jul 19 01:02:34 ubuntu etcd[79420]: etcd Version: 3.4.27
-Jul 19 01:02:34 ubuntu etcd[79420]: [WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
-Jul 19 01:02:34 ubuntu etcd[79420]: Git SHA: c92fb80f3
-Jul 19 01:02:34 ubuntu etcd[79420]: Go Version: go1.19.10
-Jul 19 01:02:34 ubuntu etcd[79420]: Go OS/Arch: linux/amd64
-Jul 19 01:02:34 ubuntu etcd[79420]: setting maximum number of CPUs to 4, total number of available CPUs is 4
-Jul 19 01:02:34 ubuntu etcd[79420]: Running http and grpc server on single port. This is not recommended for production.
-Jul 19 01:02:34 ubuntu etcd[79420]: name = ubuntu
-Jul 19 01:02:34 ubuntu etcd[79420]: data dir = /opt/stack/data/etcd
-Jul 19 01:02:34 ubuntu etcd[79420]: member dir = /opt/stack/data/etcd/member
-Jul 19 01:02:34 ubuntu etcd[79420]: heartbeat = 100ms
-Jul 19 01:02:34 ubuntu etcd[79420]: election = 1000ms
-Jul 19 01:02:34 ubuntu etcd[79420]: snapshot count = 100000
-Jul 19 01:02:34 ubuntu etcd[79420]: advertise client URLs = http://10.201.5.82:2379
-Jul 19 01:02:34 ubuntu etcd[79420]: check file permission: directory "/opt/stack/data/etcd" exist, but the permission is "dtrwxrwxrwx". The recommended permission is "-rwx------" to prevent possible unprivileged access to the data.
-Jul 19 01:02:34 ubuntu etcd[79420]: starting member 43038365673ccf7b in cluster 4e30dcbc85f3b47b
-Jul 19 01:02:34 ubuntu etcd[79420]: raft2025/07/19 01:02:34 INFO: 43038365673ccf7b switched to configuration voters=()
-Jul 19 01:02:34 ubuntu etcd[79420]: raft2025/07/19 01:02:34 INFO: 43038365673ccf7b became follower at term 0
-Jul 19 01:02:34 ubuntu etcd[79420]: raft2025/07/19 01:02:34 INFO: newRaft 43038365673ccf7b [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
-Jul 19 01:02:34 ubuntu etcd[79420]: raft2025/07/19 01:02:34 INFO: 43038365673ccf7b became follower at term 1
-Jul 19 01:02:34 ubuntu etcd[79420]: raft2025/07/19 01:02:34 INFO: 43038365673ccf7b switched to configuration voters=(4828847697018277755)
-Jul 19 01:02:34 ubuntu etcd[79420]: simple token is not cryptographically signed
-Jul 19 01:02:34 ubuntu etcd[79420]: starting server... [version: 3.4.27, cluster version: to_be_decided]
-Jul 19 01:02:34 ubuntu etcd[79420]: started to purge file, dir: /opt/stack/data/etcd/member/snap, suffix: snap.db, max: 5, interval: 30s
-Jul 19 01:02:34 ubuntu etcd[79420]: started to purge file, dir: /opt/stack/data/etcd/member/snap, suffix: snap, max: 5, interval: 30s
-Jul 19 01:02:34 ubuntu etcd[79420]: started to purge file, dir: /opt/stack/data/etcd/member/wal, suffix: wal, max: 5, interval: 30s
-Jul 19 01:02:34 ubuntu etcd[79420]: 43038365673ccf7b as single-node; fast-forwarding 9 ticks (election ticks 10)
-Jul 19 01:02:34 ubuntu etcd[79420]: raft2025/07/19 01:02:34 INFO: 43038365673ccf7b switched to configuration voters=(4828847697018277755)
-Jul 19 01:02:34 ubuntu etcd[79420]: added member 43038365673ccf7b [http://10.201.5.82:2380] to cluster 4e30dcbc85f3b47b
-Jul 19 01:02:34 ubuntu etcd[79420]: listening for peers on [::]:2380
-Jul 19 01:02:35 ubuntu etcd[79420]: raft2025/07/19 01:02:35 INFO: 43038365673ccf7b is starting a new election at term 1
-Jul 19 01:02:35 ubuntu etcd[79420]: raft2025/07/19 01:02:35 INFO: 43038365673ccf7b became candidate at term 2
-Jul 19 01:02:35 ubuntu etcd[79420]: raft2025/07/19 01:02:35 INFO: 43038365673ccf7b received MsgVoteResp from 43038365673ccf7b at term 2
-Jul 19 01:02:35 ubuntu etcd[79420]: raft2025/07/19 01:02:35 INFO: 43038365673ccf7b became leader at term 2
-Jul 19 01:02:35 ubuntu etcd[79420]: raft2025/07/19 01:02:35 INFO: raft.node: 43038365673ccf7b elected leader 43038365673ccf7b at term 2
-Jul 19 01:02:35 ubuntu etcd[79420]: published {Name:ubuntu ClientURLs:[http://10.201.5.82:2379]} to cluster 4e30dcbc85f3b47b
-Jul 19 01:02:35 ubuntu etcd[79420]: setting up the initial cluster version to 3.4
-Jul 19 01:02:35 ubuntu etcd[79420]: ready to serve client requests
-Jul 19 01:02:35 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
-Jul 19 01:02:35 ubuntu etcd[79420]: serving insecure client requests on 10.201.5.82:2379, this is strongly discouraged!
-Jul 19 01:02:35 ubuntu etcd[79420]: set the initial cluster version to 3.4
-Jul 19 01:02:35 ubuntu etcd[79420]: enabled capabilities for version 3.4
-Jul 19 01:07:23 ubuntu etcd[79420]: start time = 2025-07-19 01:07:23.625999834 +0000 UTC m=+288.754853827, time spent = 1.483861ms, remote = 10.201.5.82:35752, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 19 01:07:23 ubuntu etcd[79420]: start time = 2025-07-19 01:07:23.663105882 +0000 UTC m=+288.791959882, time spent = 202.731µs, remote = 10.201.5.82:35752, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 19 01:07:30 ubuntu etcd[79420]: start time = 2025-07-19 01:07:30.754744886 +0000 UTC m=+295.883598883, time spent = 196.667µs, remote = 10.201.5.82:35752, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
-Jul 19 01:07:32 ubuntu etcd[79420]: start time = 2025-07-19 01:07:32.681372982 +0000 UTC m=+297.810226981, time spent = 274.217µs, remote = 10.201.5.82:35752, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Aug 05 14:01:06 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
+Aug 05 14:01:06 ubuntu etcd[79460]: WARNING: Package "github.com/golang/protobuf/protoc-gen-go/generator" is deprecated.
+Aug 05 14:01:06 ubuntu etcd[79460]:         A future release of golang/protobuf will delete this package,
+Aug 05 14:01:06 ubuntu etcd[79460]:         which has long been excluded from the compatibility promise.
+Aug 05 14:01:06 ubuntu etcd[79460]: [WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
+Aug 05 14:01:06 ubuntu etcd[79460]: Running http and grpc server on single port. This is not recommended for production.
+Aug 05 14:01:06 ubuntu etcd[79460]: etcd Version: 3.4.27
+Aug 05 14:01:06 ubuntu etcd[79460]: [WARNING] Deprecated '--logger=capnslog' flag is set; use '--logger=zap' flag instead
+Aug 05 14:01:06 ubuntu etcd[79460]: Git SHA: c92fb80f3
+Aug 05 14:01:06 ubuntu etcd[79460]: Go Version: go1.19.10
+Aug 05 14:01:06 ubuntu etcd[79460]: Go OS/Arch: linux/amd64
+Aug 05 14:01:06 ubuntu etcd[79460]: setting maximum number of CPUs to 4, total number of available CPUs is 4
+Aug 05 14:01:06 ubuntu etcd[79460]: Running http and grpc server on single port. This is not recommended for production.
+Aug 05 14:01:06 ubuntu etcd[79460]: name = ubuntu
+Aug 05 14:01:06 ubuntu etcd[79460]: data dir = /opt/stack/data/etcd
+Aug 05 14:01:06 ubuntu etcd[79460]: member dir = /opt/stack/data/etcd/member
+Aug 05 14:01:06 ubuntu etcd[79460]: heartbeat = 100ms
+Aug 05 14:01:06 ubuntu etcd[79460]: election = 1000ms
+Aug 05 14:01:06 ubuntu etcd[79460]: snapshot count = 100000
+Aug 05 14:01:06 ubuntu etcd[79460]: advertise client URLs = http://10.201.5.82:2379
+Aug 05 14:01:06 ubuntu etcd[79460]: check file permission: directory "/opt/stack/data/etcd" exist, but the permission is "dtrwxrwxrwx". The recommended permission is "-rwx------" to prevent possible unprivileged access to the data.
+Aug 05 14:01:06 ubuntu etcd[79460]: starting member 43038365673ccf7b in cluster 4e30dcbc85f3b47b
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b switched to configuration voters=()
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b became follower at term 0
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: newRaft 43038365673ccf7b [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b became follower at term 1
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b switched to configuration voters=(4828847697018277755)
+Aug 05 14:01:06 ubuntu etcd[79460]: simple token is not cryptographically signed
+Aug 05 14:01:06 ubuntu etcd[79460]: starting server... [version: 3.4.27, cluster version: to_be_decided]
+Aug 05 14:01:06 ubuntu etcd[79460]: 43038365673ccf7b as single-node; fast-forwarding 9 ticks (election ticks 10)
+Aug 05 14:01:06 ubuntu etcd[79460]: started to purge file, dir: /opt/stack/data/etcd/member/snap, suffix: snap.db, max: 5, interval: 30s
+Aug 05 14:01:06 ubuntu etcd[79460]: started to purge file, dir: /opt/stack/data/etcd/member/snap, suffix: snap, max: 5, interval: 30s
+Aug 05 14:01:06 ubuntu etcd[79460]: started to purge file, dir: /opt/stack/data/etcd/member/wal, suffix: wal, max: 5, interval: 30s
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b switched to configuration voters=(4828847697018277755)
+Aug 05 14:01:06 ubuntu etcd[79460]: added member 43038365673ccf7b [http://10.201.5.82:2380] to cluster 4e30dcbc85f3b47b
+Aug 05 14:01:06 ubuntu etcd[79460]: listening for peers on [::]:2380
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b is starting a new election at term 1
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b became candidate at term 2
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b received MsgVoteResp from 43038365673ccf7b at term 2
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: 43038365673ccf7b became leader at term 2
+Aug 05 14:01:06 ubuntu etcd[79460]: raft2025/08/05 14:01:06 INFO: raft.node: 43038365673ccf7b elected leader 43038365673ccf7b at term 2
+Aug 05 14:01:06 ubuntu etcd[79460]: published {Name:ubuntu ClientURLs:[http://10.201.5.82:2379]} to cluster 4e30dcbc85f3b47b
+Aug 05 14:01:06 ubuntu etcd[79460]: ready to serve client requests
+Aug 05 14:01:06 ubuntu etcd[79460]: setting up the initial cluster version to 3.4
+Aug 05 14:01:06 ubuntu etcd[79460]: set the initial cluster version to 3.4
+Aug 05 14:01:06 ubuntu etcd[79460]: enabled capabilities for version 3.4
+Aug 05 14:01:06 ubuntu etcd[79460]: serving insecure client requests on 10.201.5.82:2379, this is strongly discouraged!
+Aug 05 14:01:06 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
+Aug 05 14:05:47 ubuntu etcd[79460]: start time = 2025-08-05 14:05:47.807719633 +0000 UTC m=+281.590837701, time spent = 1.591942ms, remote = 10.201.5.82:41590, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Aug 05 14:05:47 ubuntu etcd[79460]: start time = 2025-08-05 14:05:47.80787928 +0000 UTC m=+281.590997363, time spent = 1.844782ms, remote = 10.201.5.82:41590, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Aug 05 14:05:54 ubuntu etcd[79460]: start time = 2025-08-05 14:05:54.796990316 +0000 UTC m=+288.580108400, time spent = 267.223µs, remote = 10.201.5.82:41590, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
+Aug 05 14:05:56 ubuntu etcd[79460]: start time = 2025-08-05 14:05:56.80791596 +0000 UTC m=+290.591034043, time spent = 202.813µs, remote = 10.201.5.82:41590, response type = /etcdserverpb.Lease/LeaseGrant, request count = -1, request size = -1, response count = -1, response size = -1, request content = 
