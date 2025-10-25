@@ -46,10 +46,6 @@ haproxy_env: EnvFilter, env, root, PROCESS_TAG=, haproxy, -f, .*
 dnsmasq: CommandFilter, dnsmasq, root
 dnsmasq_env: EnvFilter, env, root, PROCESS_TAG=, dnsmasq
 
-# DIBBLER
-dibbler-client: CommandFilter, dibbler-client, root
-dibbler-client_env: EnvFilter, env, root, PROCESS_TAG=, dibbler-client
-
 # L3
 radvd: CommandFilter, radvd, root
 radvd_env: EnvFilter, env, root, PROCESS_TAG=, radvd
@@ -57,6 +53,8 @@ keepalived: CommandFilter, keepalived, root
 keepalived_env: EnvFilter, env, root, PROCESS_TAG=, keepalived
 keepalived_state_change: CommandFilter, neutron-keepalived-state-change, root
 keepalived_state_change_env: EnvFilter, env, root, PROCESS_TAG=, neutron-keepalived-state-change
+conntrackd: CommandFilter, conntrackd, root
+conntrackd_env: EnvFilter, env, root, PROCESS_TAG=, conntrackd
 
 # OPEN VSWITCH
 ovs-ofctl: CommandFilter, ovs-ofctl, root
